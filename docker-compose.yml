@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  plantuml:
+    image: dantheman39/plantuml
+    build: .
+    volumes:
+        - "/Users/daniel.riggs/Code/refi-prequal-offers-direct-mail-batch/docs/direct_mail_data_upload:/app/input"
+        - "/Users/daniel.riggs/Code/refi-prequal-offers-direct-mail-batch/docs/direct_mail_data_upload:/app/output"
